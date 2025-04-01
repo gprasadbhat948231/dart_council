@@ -63,7 +63,8 @@ npm run dev
 ```
 
 ## Hosted Link
-
+Vercel - https://dart-council.vercel.app/
+(Company Logo URL might be broken) 
 
 ## ScreenShots
 
