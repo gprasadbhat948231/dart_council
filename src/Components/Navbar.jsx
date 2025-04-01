@@ -30,6 +30,8 @@ const Navbar = () => {
       navigateTo("/pricing");
     } else if (page === "about") {
       navigateTo("/about");
+    } else if (page === "login") {
+      navigateTo("/login");
     } else {
       navigateTo("/");
     }
@@ -104,7 +106,7 @@ const Navbar = () => {
                 <ListItem button>
                   <ListItemText
                     primary="Login"
-                    onClick={() => handlePageChange()}
+                    onClick={() => handlePageChange("login")}
                   />
                 </ListItem>
               </List>
@@ -124,7 +126,7 @@ const Navbar = () => {
               onClick={() => handlePageChange()}
               text="Get Started"
             />
-            <CustomButton onClick={() => handlePageChange()} text="Login" />
+            <CustomButton onClick={() => handlePageChange("login")} text="Login" />
           </Box>
         )}
       </Toolbar>
